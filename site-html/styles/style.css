@@ -1,0 +1,144 @@
+:root {
+  --raisin-black: rgb(26, 24, 27);
+  --hunter-green: rgb(67, 100, 54);
+  --pale-bud: rgb(221, 224, 189);
+  --old-lavander: rgb(130, 112, 129);
+  --helio-gray: rgb(187, 172, 193);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+header {
+  width: 100%;
+  color: var(--raisin-black);
+  height: 5rem;
+  background: var(--hunter-green);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 20;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav ul a {
+  color: #1a181b;
+  text-decoration: none;
+}
+nav ul a:active {
+  color: initial;
+}
+
+article#formacao {
+  background-image: url('./../assets/bgimage.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pale-bud);
+  backdrop-filter: blur(30%);
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+article#formacao div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1.5rem;
+  color: var(--helio-gray);
+  line-height: 1.6;
+}
+
+article#formacao div h2,
+h3 {
+  color: var(--hunter-green);
+}
+
+article#formacao div h2 {
+  font-size: 3rem;
+}
+
+article#formacao div h3 {
+  font-size: 1.8rem;
+}
+
+article#formacao div p {
+  font-size: 1.4rem;
+}
+
+article#formacao div h2,
+h3,
+p {
+  z-index: 10;
+  text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.5);
+}
+
+.blackfilter {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+article#habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-around;
+  background-color: var(--helio-gray);
+  padding: 1.5rem;
+}
+
+article#habilidades h2 {
+  justify-self: flex-end;
+  font-size: 2rem;
+}
+
+article#habilidades ul {
+  display: flex;
+  list-style: none;
+  align-items: space-around;
+  justify-content: center;
+  gap: 4rem;
+  flex-flow: wrap;
+}
+
+article#habilidades h2 {
+  justify-self: flex-start;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  height: 90%;
+}
+article#habilidades ul li {
+  transition: all 1s;
+}
+
+article#habilidades ul li:hover {
+  transform: scale(2);
+}
