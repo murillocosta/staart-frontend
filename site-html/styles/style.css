@@ -18,7 +18,7 @@ header {
   color: var(--raisin-black);
   height: 5rem;
   background: var(--hunter-green);
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 7px 10px rgba(67, 100, 54, 0.5);
   position: fixed;
   z-index: 20;
 }
@@ -31,6 +31,12 @@ nav {
   padding: 1.5rem;
 }
 
+nav h1 {
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -38,58 +44,63 @@ nav ul {
   justify-content: space-around;
   list-style: none;
   gap: 1rem;
+  letter-spacing: 1.8px;
 }
 
 nav ul a {
-  color: #1a181b;
+  color: #fff;
   text-decoration: none;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 nav ul a:active {
   color: initial;
 }
 
-article#formacao {
-  background-image: url('./../assets/bgimage.jpg');
-  background-attachment: fixed;
+article#inicio {
+  /* background-image: url('./../assets/bgimage.jpg'); */
+  background-image: url('./../assets/landscape.jpeg');
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;  
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  background-color: var(--pale-bud);
   backdrop-filter: blur(30%);
   font-family: 'Bebas Neue', sans-serif;
 }
 
-article#formacao div {
+article#inicio div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   padding: 1.5rem;
-  color: var(--helio-gray);
+  color: white;
   line-height: 1.6;
 }
 
-article#formacao div h2,
+article#inicio div h1,
 h3 {
-  color: var(--hunter-green);
+  color: whitesmoke;
+  letter-spacing: 4px;
 }
 
-article#formacao div h2 {
+article#inicio div h1 {
   font-size: 3rem;
 }
 
-article#formacao div h3 {
+article#inicio div h3 {
   font-size: 1.8rem;
 }
 
-article#formacao div p {
+article#inicio div p {
   font-size: 1.4rem;
 }
 
-article#formacao div h2,
+article#inicio div h1,
 h3,
 p {
   z-index: 10;
